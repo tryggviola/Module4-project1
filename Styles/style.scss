@@ -1,0 +1,105 @@
+body {
+	//basic CSS styling for the page, everything is centered in the middle with a flex display.
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	//animation for the background, which is 3.5s long and has forwards fill mode.
+	animation: back 3.5s forwards;
+}
+
+//the keyframe for the background, its starts with no background and from 85% to 100% it changes to the yellow color.
+@keyframes back {
+	0% {
+		background-color: none;
+	}
+
+	85% {
+		background: none;
+	}
+
+	100% {
+		background-color: #f3ee70;
+	}
+}
+
+//basic CSS styling for the logo
+.barcode-logo {
+	margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+//animation for the red line, it starts 2px down, runs the "scan" animation in 3s,
+//ones it has played the animation it stops in that state.
+#red {
+	transform: translateY(2px);
+	animation: scan 3s forwards;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+//the red line goes up from 0-50%, from 50-100% it moves 25px to the right, rotates 90°and the X axis gets 2.5x bigger.
+@keyframes scan {
+	0% {
+		transform: translateY(2px);
+	}
+	50% {
+		transform: translateY(-200px);
+	}
+	100% {
+		transform: translateX(-25px) rotate(90deg) scaleX(2.5);
+	}
+}
+
+
+//he runs the appear animation for 3.5s which eases in.
+#bar-button {
+  animation: appear 3.5s ease-in;
+}
+
+//the button starts with 0% opacity and when it hits 98% it goes from 0-100% opacity.
+@keyframes appear {
+	0% {
+		opacity: 0%;
+	}
+	98% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+//when hovering over the button two animation plays, one for the box and another for the title
+#bar-button:hover{
+  #box {
+    animation: button-change 0.5s forwards;
+  }
+  #Title {
+    animation: title-change 0.3s forwards;
+  }
+
+}
+
+//animation for the button, it scales from 1 to 0.68, revealing the bardcode behind the button.
+@keyframes button-change{
+  from {
+  transform: scaleX(1);  
+  }
+
+  to {
+    transform: scaleX(0.68);
+
+  }
+}
+
+//animation for the title, when the box scales so dose the text. 
+@keyframes title-change {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+
+  }
+}
+

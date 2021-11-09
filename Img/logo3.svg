@@ -1,0 +1,15 @@
+<svg width="164" height="200" viewBox="0 0 164 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo" clip-path="url(#clip0_8:206)">
+<g id="Layer 1">
+<path id="4" d="M163.564 0.360611H80.0752V199.639H163.564V0.360611Z" fill="black" stroke="#231F20" stroke-miterlimit="10"/>
+<path id="2" d="M46.1775 0.360611H24.8384V199.639H46.1775V0.360611Z" fill="black" stroke="#231F20" stroke-miterlimit="10"/>
+<path id="1" d="M17.303 0.363251H0.357666V199.642H17.303V0.363251Z" fill="black" stroke="#231F20" stroke-miterlimit="10"/>
+<path id="RED" d="M181.279 206.077L181.279 199L-18 199L-18 206.077L181.279 206.077Z" fill="#F37070" stroke="#F27070" stroke-miterlimit="10"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_8:206">
+<rect width="163.922" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>
